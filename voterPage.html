@@ -5,84 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>voters page</title>
-    <style>
-   body{
-       margin:0;
-      
-       
-   }
-   div{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    height:100vh;
-       width:100vw;
-       background-color: aqua;
-
-   }
-   button{
-       padding:10px;
-       margin-left: 20px;
-       margin-right: 20px;
-       background-color:chartreuse;
-       border-radius: 20px;
-   }
-   h1{
-       color:crimson;
-   }
-    </style>
+    <link rel="stylesheet" href="voterPage.css">
 </head>
 <body>
     <div>
         <h1 id="bjp" value="">0</h1>
-        <button id="increment1"onclick="bjp()">bjp</button>
+        <button id="increment1"onclick="bjp()">Bjp</button>
         <h1 id="congress" value="">0</h1>
         <button id="increment2"onclick="congress()">Congress</button>
         <h1 id="aap">0</h1>
         <button id="increment3"onclick="aap()">AAP</button>
         <h1 id="total">0</h1>
-        <button id="total1" onclick="total()">total
+        <button id="total1" onclick="total()">Total
         </button>
     </div>
     
     
 </body>
-<script>
-   
-    var h1=document.getElementById("bjp");
-    var h2=document.getElementById("congress");
-    var h3=document.getElementById("aap");
-    var h4=document.getElementById("total");
-   
-    let count=0;
- function bjp(){
-    
-     count+=1;
-      h1.innerText=count;
- }
- let co=0;
- function congress(){
-    
-     co+=1;
-      h2.innerText=co;
- }
- 
- let cou=0;
- function aap(){
-
-     cou+=1;
-      h3.innerText=cou;
- }
- let c=0;
- function total(){
-    // let t=h1.value;
-     //let b=h2.value;
-    c=parseInt(count)+parseInt(co)+parseInt(cou);
-    h4.innerText=c;
- }
- 
- 
-
-</script>
+<script src="voterPage.js"></script>
 </html>
